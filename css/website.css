@@ -36,7 +36,7 @@ a {
 }
 
 .text-gray {
-    color: #444;
+    color: rgb(0, 0, 0);
 }
 
 h1,
@@ -66,14 +66,14 @@ outline: none;
 }
 
 .btn-primary {
-    background-color: #168083;
+    background-color: #ff0000;
     font-size: 2;
     border: none;
     cursor: pointer;
-    transition: all 0.4s ease-in;
+    transition: all 0.1s ease-in;
 }
 .btn-primary:hover{
-    background-color: #136366;
+    background-color: #0011ff;
 }
 
 /* ######################### navbar styleing ################## */
@@ -146,7 +146,7 @@ outline: none;
 .showcase-area {
     height: 50vh;
     width: 100%;
-    background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.336)), url('C:/Users/moham/OneDrive/Desktop/code/html/project2/img/food2.jpg');
+    background: linear-gradient(rgba(128, 4, 252, 0.144), rgba(255, 255, 255, 0.336)), url('..//img/@iamthegsk_.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -264,9 +264,9 @@ outline: none;
 }
 
 #about .small {
-    font-size: 1.6rem;
+    font-size: 6rem;
     color: #666;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 
@@ -433,7 +433,7 @@ outline: none;
 
 #food-menu {
     margin: 3rem 0;
-    padding: 1rem 2rem;
+    padding: 5rem 2rem;
     font-size: 1.2rem;
 
 }
@@ -495,7 +495,7 @@ color: #555;
 #testomonial{
 
     background-color: #f5f5f7;
-    padding: 40px 0 50px 0;
+    padding: 50px 0 50px 0;
     font-size: 1.2rem;
 
 }
