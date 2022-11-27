@@ -9,7 +9,27 @@
     <link rel="stylesheet" href="css/contact.css" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
- <body>   
+ <body>
+
+
+
+  
+  <script>
+    window.console = window.console || function(t) {};
+  </script>
+  
+    
+    
+    <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+  
+  
+
+
+
 <section id="contact">
     <div class="contact-box">
       <div class="contact-links">
@@ -52,7 +72,7 @@
           </div>
         
           <!--=============== MAIN JS ===============-->
-         <script src="contact_js/contact.js"></script>
+        <script src="contact_js/contact.js"></script>
         <div class="links">
           <div class="link">
             <!-- <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a> -->
@@ -69,21 +89,180 @@
         </div>
       </div>
       <div class="contact-form-wrapper">
-        <form>
+        
+    
+        
+        <form method="post" id="sheetdb-form"
+        action="https://sheetdb.io/api/v1/0e7ea2f1e90kj">
           <div class="form-item">
-            <input type="text" name="sender" required>
+            <input type="text" name="data[sender]" required>
             <label>Name:</label>
           </div>
           <div class="form-item">
-            <input type="text" name="email" required>
+            <input type="text" name="data[email]" required>
             <label>Email:</label>
           </div>
           <div class="form-item">
-            <textarea class="" name="message" required></textarea>
+            <textarea class="message" name="data[msg]" required></textarea>
             <label>Message:</label>
           </div>
-          <button class="submit-btn">Send</button>  
+          <!-- <button class="submit-btn">Send</button>   -->
+          <script>
+            window.console = window.console || function(t) {};
+          </script>
+          
+            
+            
+            <script>
+            if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+            }
+          </script>
+          
+          
+          <body translate="no" data-new-gr-c-s-check-loaded="14.997.0" data-gr-ext-installed="">
+            <button class="button" style="">
+              <span class="default">Send</span>
+              <span class="success">Sent</span>
+              <div class="left"></div>
+              <div class="right"></div>
+          </button>
+          
+              <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+          
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+                <script id="rendered-js">
+    document.querySelectorAll('.button').forEach(button => {
+          
+          let getVar = variable => getComputedStyle(button).getPropertyValue(variable);
+        
+          button.addEventListener('click', e => {
+        
+            if (!button.classList.contains('active')) {
+        
+              button.classList.add('active');
+        
+              gsap.to(button, {
+                keyframes: [{
+                  '--left-wing-first-x': 50,
+                  '--left-wing-first-y': 100,
+                  '--right-wing-second-x': 50,
+                  '--right-wing-second-y': 100,
+                  duration: .2,
+                  onComplete() {
+                    gsap.set(button, {
+                      '--left-wing-first-y': 0,
+                      '--left-wing-second-x': 40,
+                      '--left-wing-second-y': 100,
+                      '--left-wing-third-x': 0,
+                      '--left-wing-third-y': 100,
+                      '--left-body-third-x': 40,
+                      '--right-wing-first-x': 50,
+                      '--right-wing-first-y': 0,
+                      '--right-wing-second-x': 60,
+                      '--right-wing-second-y': 100,
+                      '--right-wing-third-x': 100,
+                      '--right-wing-third-y': 100,
+                      '--right-body-third-x': 60 });
+        
+                  } },
+                {
+                  '--left-wing-third-x': 20,
+                  '--left-wing-third-y': 90,
+                  '--left-wing-second-y': 90,
+                  '--left-body-third-y': 90,
+                  '--right-wing-third-x': 80,
+                  '--right-wing-third-y': 90,
+                  '--right-body-third-y': 90,
+                  '--right-wing-second-y': 90,
+                  duration: .2 },
+                {
+                  '--rotate': 50,
+                  '--left-wing-third-y': 95,
+                  '--left-wing-third-x': 27,
+                  '--right-body-third-x': 45,
+                  '--right-wing-second-x': 45,
+                  '--right-wing-third-x': 60,
+                  '--right-wing-third-y': 83,
+                  duration: .25 },
+                {
+                  '--rotate': 55,
+                  '--plane-x': -8,
+                  '--plane-y': 24,
+                  duration: .2 },
+                {
+                  '--rotate': 40,
+                  '--plane-x': 45,
+                  '--plane-y': -180,
+                  '--plane-opacity': 0,
+                  duration: .3,
+                  onComplete() {
+                    setTimeout(() => {
+                      button.removeAttribute('style');
+                      gsap.fromTo(button, {
+                        opacity: 0,
+                        y: -8 },
+                      {
+                        opacity: 1,
+                        y: 0,
+                        clearProps: true,
+                        duration: .3,
+                        onComplete() {
+                          button.classList.remove('active');
+                        } });
+        
+                    }, 2000);
+                  } }] });
+        
+        
+        
+              gsap.to(button, {
+                keyframes: [{
+                  '--text-opacity': 0,
+                  '--border-radius': 0,
+                  '--left-wing-background': getVar('--primary-darkest'),
+                  '--right-wing-background': getVar('--primary-darkest'),
+                  duration: .1 },
+                {
+                  '--left-wing-background': getVar('--primary'),
+                  '--right-wing-background': getVar('--primary'),
+                  duration: .1 },
+                {
+                  '--left-body-background': getVar('--primary-dark'),
+                  '--right-body-background': getVar('--primary-darkest'),
+                  duration: .4 },
+                {
+                  '--success-opacity': 1,
+                  '--success-scale': 1,
+                  duration: .25,
+                  delay: .25 }] });
+        
+        
+        
+            }
+        
+          });
+        
+        });
+        //# sourceURL=pen.js
+            </script>
         </form>
+        <script>
+          var form = document.getElementById('sheetdb-form');
+          form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method : "POST",
+                body: new FormData(document.getElementById("sheetdb-form")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+              // you can put any JS code here
+              window.location.href = 'https://iamthegsk.github.io/contact.html';
+              alert('success')
+            });
+          });
+        </script>
       </div>
     </div>
   </section>
